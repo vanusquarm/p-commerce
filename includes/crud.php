@@ -5,7 +5,7 @@
  * @Package Database
  */
 
-define('DOMAIN_URL','http://localhost/ellsgateau'); /* chnage to your domain here - Don't forget to add forward slash at the end like this "/" */
+define('DOMAIN_URL','https://p-commerce-production.up.railway.app/'); /* chnage to your domain here - Don't forget to add forward slash at the end like this "/" */
 define('JWT_SECRET_KEY','replace_with_your_strong_jwt_secret_key'); /* chnage to your secret key here - you can set anything here - make sure same you set on android side as well */
 
 class Database{
