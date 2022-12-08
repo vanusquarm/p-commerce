@@ -5,7 +5,7 @@
  * @Package Database
  */
 
-define('DOMAIN_URL','http://localhost/ellsgateau/'); /* chnage to your domain here - Don't forget to add forward slash at the end like this "/" */
+define('DOMAIN_URL','http://localhost/'); /* chnage to your domain here - Don't forget to add forward slash at the end like this "/" */
 define('JWT_SECRET_KEY','replace_with_your_strong_jwt_secret_key'); /* chnage to your secret key here - you can set anything here - make sure same you set on android side as well */
 
 class Database{
@@ -16,10 +16,10 @@ class Database{
      * Database class
      */
     
-    private $db_host = "database-1.cnsmk1isdiqz.us-east-2.rds.amazonaws.com";  // Change as required
-    private $db_user = "admin";  // Change as required
-    private $db_pass = "password";  // Change as required 
-    private $db_name = "ekart-aws";    // Change as required
+    private $db_host = "containers-us-west-144.railway.app";  // Change as required
+    private $db_user = "root";  // Change as required
+    private $db_pass = "y6QXmvQhhyYF8BsB47Ph";  // Change as required 
+    private $db_name = "railway";    // Change as required
     
     /*
      * Extra variables that are required by other function such as boolean con variable
