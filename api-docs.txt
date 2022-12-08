@@ -1,0 +1,192 @@
+API URL -->> 
+	http://ekart.wrteam.in/api-firebase/{filename}
+
+----------------------------------------------------------
+API Files list 
+----------------------------------------------------------
+1. get-categories.php
+2. get-subcategories-by-category-id.php
+3. get-cities.php
+4. get-areas-by-city-id.php
+5. get-products-by-category-id.php
+6. get-products-by-subcategory-id.php
+7. get-product-by-id.php
+8. order-process.php
+9. set-device.php
+10. user-registration.php
+11. login.php
+12. products-search.php
+13. sections.php
+14. settings.php
+15. slider-images.php
+
+
+------------------------------------------
+What parameters to be Passed?  See here >>
+------------------------------------------
+
+Use POST method to pass the parameters
+
+1. get-categories.php
+	accesskey:90336
+
+2. get-subcategories-by-category-id.php
+	accesskey:90336
+	category_id:28
+
+3. get-cities.php
+	accesskey:90336
+	
+4. get-areas-by-city-id.php
+	accesskey:90336
+	city_id:24
+
+5. get-products-by-category-id.php
+	accesskey:90336
+  	category_id:28 
+
+6. get-products-by-subcategory-id.php
+	accesskey:90336
+	subcategory_id:63
+
+7. get-product-by-id.php
+	accesskey:90336
+	product_id:230
+
+8. order-process.php
+
+	i. Place_order
+
+		accesskey:90336
+		place_order:1
+		user_id:5
+		mobile:9974692496
+		product_variant_id:["56","58","75"]
+		quantity:["3","3","1"]
+		total:60.0
+		delivery_charge:20.0
+		deliver_by:sagar
+		discount:10
+		final_total:55
+		payment_method:PAYTM
+		address:bhuj
+		delivery_time:Today - Evening (4:00pm to 7:00pm)
+		status:[["received","11-06-2019 12:22:44pm"],["processed","13-06-2019 11:36:49am"],["shipped","13-06-2019 12:07:29pm"],["delivered","13-06-2019 01:57:00pm"]]
+
+	ii. get_orders
+
+		accesskey:90336
+		get_orders:1
+		user_id:5
+
+	iii. update_order_status
+
+		accesskey:90336
+		update_order_status:1
+		id:169
+		status:cancelled
+
+	iv. get_settings
+
+		accesskey:90336
+		get_settings:1
+		id:168
+
+	v. update_order_total_payable
+
+		accesskey:90336
+		update_order_total_payable:1
+		id:5
+		deliver_by:sagar
+		discount:10
+		total_payble:60.0
+
+9. set-device.php
+	accesskey:90336 
+	user_id:500
+	token:227
+
+10. user-registration.php
+
+	i. Verify User
+
+		accesskey:90336
+		type:verify-user
+		mobile:8980834200
+
+	ii. After successful OTP verification Register User
+
+		accesskey:90336
+		type:register
+		name:Jaydeep Goswami
+		email:jaydeepjgiri@yahoo.com
+		password:36652
+		mobile:7894561230
+		city: bhuj
+		street: bhuj
+		pincode: 191104
+		status:1   // 1 - Active & 0 
+
+	iii. Edit the user profile
+
+		accesskey:90336
+		type:edit-profile
+		id:5
+		name:Jaydeep Goswami
+		email:jaydeepjgiri@yahoo.com
+		password:36652
+		mobile:7894561230
+		city: bhuj
+		street: bhuj
+		pincode: 191104
+		dob:15-12-1990
+
+	iv. Change the password
+
+		accesskey:90336
+		type:change-password
+		id:5
+		password:36652
+
+	v. To reset / recover password via email
+
+		accesskey:90336
+		type:forgot-password-email
+		email:jaydeepjgiri@yahoo.com
+
+	vi. To reset / recover password via mobile number
+
+		accesskey:90336
+		type:forgot-password-mobile
+		mobile:7894561230
+
+	vii. To register user's FCM token
+
+		accesskey:90336
+		type:register-device
+		user_id:16
+		token:1155
+
+11. login.php
+	accesskey:90336
+    mobile:9974692496
+    password:36657
+    status:1   // 1 - Active & 0 Deactive
+
+12. products-search.php
+	accesskey:90336
+	type:products-search
+	search:Powder
+
+13. sections.php
+	accesskey:90336
+	get-all-sections:1 
+
+14. settings.php
+	accesskey:90336
+	settings:1
+	
+15. slider-images.php
+	accesskey:90336
+	get-slider-images:1
+

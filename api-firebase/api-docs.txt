@@ -1,0 +1,331 @@
+API URL -->> 
+	http://wrteam.in/apnadukan/api-firebase/{filename}
+
+----------------------------------------------------------
+API Files list 
+----------------------------------------------------------
+1. get-all-category-data.php
+2. get-all-cities-data.php
+3. get-area-by-city-id.php
+4. get-menu-data-by-category-id.php
+5. get-menu-data-by-subcategory-id.php
+6. get-menu-detail.php
+7. order-process.php
+8. register-device.php
+9. user-registration.php
+10. login.php
+11. products-search.php
+12. sections.php
+13. settings.php
+14. slider-images.php
+15. get-areas-by-city-id.php
+16. get-categories.php
+17. get-cities.php
+18. payment-requests.php
+19. get-user-data.php
+20. get_all_products.php
+21. validate-promo-code.php
+22. ../paypal/create-payment.php
+23. create-razorpay-order.php
+
+
+
+------------------------------------------
+What parameters to be Passed?  See here >>
+------------------------------------------
+
+Use POST method to pass the parameters
+
+1. get-categories.php
+	accesskey:90336
+
+2. get-subcategories-by-category-id.php
+	accesskey:90336
+	category_id:28
+
+2. get-cities.php
+	accesskey:90336
+	
+3. get-areas-by-city-id.php
+	accesskey:90336
+	city_id:24
+
+4. get-products-by-category-id.php
+	accesskey:90336
+  	category_id:28
+    limit:10 // {optional}
+    offset:0 // {optional}
+    sort:new / old / high / low // {optional}
+
+5. get-products-by-subcategory-id.php
+	accesskey:90336
+	subcategory_id:63
+	limit:10 // {optional}
+    offset:0 // {optional}
+    sort:new / old / high / low // {optional}
+
+6. get-product-by-id.php
+	accesskey:90336
+	product_id:230
+
+7. order-process.php
+
+	i. Place_order
+
+		accesskey:90336
+		place_order:1
+		user_id:5
+		mobile:9974692496
+		product_variant_id:["56","58","75"]
+		quantity:["3","3","1"]
+		total:60.0
+		delivery_charge:20.0
+		tax_amount:10
+        tax_percentage:10
+		wallet_balance:20
+		wallet_used:true / false
+		discount:10
+		final_total:55
+		latitude:44.968046
+		longitude:-94.420307
+		payment_method: Paypal / Payumoney / COD / PAYTM
+		promo_code:NEW20 {optional}
+		address:bhuj
+		delivery_time:Today - Evening (4:00pm to 7:00pm)
+		
+	ii. get_orders
+
+        accesskey:90336
+        get_orders:73
+        user_id:101
+        limit:20
+        offset:5
+
+	iii. update_order_status
+
+		accesskey:90336
+		update_order_status:1
+		id:169
+		status:cancelled
+		delivery_boy_id:20{optional}
+
+	iv. get_settings
+
+		accesskey:90336
+		get_settings:1
+		id:168
+
+	v. update_order_total_payable
+
+		accesskey:90336
+		update_order_total_payable:1
+		id:5
+		deliver_by:sagar
+		discount:10
+		total_payble:60.0
+		
+	vi. add_transaction
+	
+	    accesskey:90336
+	    user_id:1
+	    order_id:1001
+	    type:payumoney / paypal
+	    txn_id:PAYMENT_GATEWAY_TXN_ID
+	    amount:89.00
+	    status:success / Completed / failed / pending // { anything returned from payment gateway }
+	    message:Message from payment gateway for successful / failure transaction
+		transaction_date:2019-11-29 13:15:00
+		
+	vii. update_order_item_status
+	
+	     accesskey:90336
+	     update_order_item_status:1
+	     order_item_id:1
+	     order_id:1
+	     status:processed
+	    
+
+8. register-device.php
+	accesskey:90336 
+	user_id:500
+	token:227
+
+9. user-registration.php
+
+	i. Verify User
+
+		accesskey:90336
+		type:verify-user
+		mobile:8980834200
+		
+
+	ii. After successful OTP verification Register User
+
+		accesskey:90336
+		type:register
+		name:Jaydeep Goswami
+		email:jaydeepjgiri@yahoo.com
+		password:36652
+		country_code:91
+		mobile:7894561230
+		fcm_id:YOUR_FCM_ID
+		dob:15-12-1990
+		city_id:1
+		area_id:1
+		street: bhuj
+		pincode: 191104
+		api_key:abc@123
+		referral_code:QCZYBEXHK5
+		friends_code:FFREGRGSD7{optional}
+		latitude:44.968046
+		longitude:-94.420307
+		
+
+	iii. Edit the user profile
+
+		accesskey:90336
+		type:edit-profile
+		id:5
+		name:Jaydeep Goswami
+		email:jaydeepjgiri@yahoo.com
+		password:36652
+		city_id:1
+		area_id:1
+		street: bhuj
+		pincode: 191104
+		dob:15-12-1990
+		latitude:44.968046
+		longitude:-94.420307
+
+	iv. Change the password
+
+		accesskey:90336
+		type:change-password
+		id:5
+		password:36652
+
+	v. To reset / recover password via email
+
+		accesskey:90336
+		type:forgot-password-email
+		email:jaydeepjgiri@yahoo.com
+
+	vi. To reset / recover password via mobile number
+
+		accesskey:90336
+		type:forgot-password-mobile
+		mobile:7894561230
+
+	vii. To register user's FCM token
+
+		accesskey:90336
+		type:register-device
+		user_id:16
+		token:1155
+
+10. login.php
+	accesskey:90336
+    mobile:9876543210
+    password:123456
+    fcm_id:YOUR_FCM_ID
+
+11. products-search.php
+	accesskey:90336
+	type:products-search
+	search:Powder
+
+12. sections.php
+	
+	i. Get all sections 
+	
+	accesskey:90336
+	get-all-sections:1 
+	
+	ii. To get notifications pagination wise
+	
+	get-notifications:1
+    limit:10            // {optional }
+    offset:0            // {optional }
+    sort:id / type      // {optional }
+    order:DESC / ASC    // {optional }
+    
+    iii. To get delivery boy notifications pagination wise
+	
+	get-delivery-boy-notifications:1
+    delivery_boy_id:10  // {optional }
+    type:order_status/order_reward  // {optional }
+    limit:10            // {optional }
+    offset:0            // {optional }
+    sort:id / type      // {optional }
+    order:DESC / ASC    // {optional }
+	
+
+13. settings.php
+	accesskey:90336
+	settings:1
+	get_privacy:1/get_terms:1/get_logo:1/get_contact:1/get_timezone:1/fcm_key:1
+	
+14. slider-images.php
+	accesskey:90336
+	get-slider-images:1
+	
+15. get-areas-by-city-id.php
+	accesskey:90336
+	city-id:1
+	keyword:search
+	
+16. get-categories.php
+	accesskey:90336
+	
+17. get-cities.php
+	accesskey:90336
+	city_id:1{optional}
+
+18. payment-requests.php
+    	i. payment_request
+
+        	 accesskey:90336
+        	 payment_request:1
+        	 user_id:5
+        	 payment_type:mobile {OR} bank
+        	 payment_address:9876543210 {OR} [["account_holder_name","girish"],["account_number","13062019010"],["ifsc_code","BOBDUD"],["bank","BOB"]]
+        	 amount_requested:100
+
+	    ii. get_payment_request
+
+        	 accesskey:90336
+        	 get_payment_requests:1
+        	 user_id:5
+        	 
+19. get-user-data.php
+	accesskey:90336
+	get_user_data:1
+	user_id:1
+	
+20. get_all_products:1
+    accesskey:90336
+    limit:10  // { optional }
+    offset:0  // { optional }
+    sort:row_order + 0  // { optional }
+    order:ASC  // { optional }
+    
+21. validate-promo-code.php
+    accesskey:90336
+    validate_promo_code:1
+    user_id:101
+    promo_code:NEW20
+    total:500
+
+22. create-payment.php
+    accesskey:90336
+    first_name:Jaydeep
+    last_name:Goswami
+    payer_email:payer_email@gmail.com
+    item_name:Product name
+    item_number:12
+    amount:1
+
+23. create-razorpay-order.php
+    accesskey:90336
+    amount:100
+    
