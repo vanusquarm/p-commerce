@@ -164,7 +164,7 @@ if (isset($_POST) && isset($_POST['start_date']) && isset($_POST['end_date'])) {
             <ol class="breadcrumb">
                 <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
             </ol>
-            <hr/>
+              
         </section>
 
         <!-- search form -->
@@ -338,7 +338,7 @@ if (isset($_POST) && isset($_POST['start_date']) && isset($_POST['end_date'])) {
             <ol class="breadcrumb">
                 <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
             </ol>
-            <hr/>
+              
         </section>
 
         <!-- search form -->

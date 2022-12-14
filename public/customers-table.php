@@ -3,7 +3,7 @@
     <ol class="breadcrumb">
         <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
     </ol>
-    <hr/>
+      
 </section>
 <!-- search form -->
 <section class="content">

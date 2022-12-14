@@ -114,7 +114,7 @@
             <ol class="breadcrumb">
                 <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
             </ol>
-            <hr/>
+              
         </section>
         <?php
             include_once('includes/functions.php');
