@@ -42,7 +42,7 @@
 	?>
 	<?php if($permissions['orders']['delete']==1){?>
 	<h1>Confirm Action</h1>
-	<hr />
+	  
 	<form method="post">
 		<p>Are you sure want to delete this order?</p>
 		<input type="submit" class="btn btn-primary" value="Delete" name="btnDelete"/>

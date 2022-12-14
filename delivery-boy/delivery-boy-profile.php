@@ -50,7 +50,7 @@
                     </li>
                 </ol>
 		<?php echo isset($error['update_user']) ? $error['update_user'] : '';?>
-		<hr />
+		  
         </section>
 		<section class="content">
           <!-- Main row -->

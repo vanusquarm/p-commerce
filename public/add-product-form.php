@@ -230,7 +230,7 @@
     <ol class="breadcrumb">
         <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
     </ol>
-    <hr />
+      
 </section>
 <section class="content">
     <div class="row">

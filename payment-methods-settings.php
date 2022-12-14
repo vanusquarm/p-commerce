@@ -68,7 +68,7 @@ include "header.php"; ?>
         <ol class="breadcrumb">
             <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
         </ol>
-        <hr />
+          
     </section>
     <?php if ($permissions['settings']['read'] == 1) { ?>
         <section class="content">

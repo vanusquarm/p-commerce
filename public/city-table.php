@@ -89,7 +89,7 @@
 			<button class="btn btn-block btn-default"><i class="fa fa-plus-square"></i>Add New City</button>
 		</a>
 	</ol>
-	<hr />
+	  
 	<?php 
 		// otherwise, show data
 		}else{

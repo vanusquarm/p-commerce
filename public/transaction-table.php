@@ -79,7 +79,7 @@ if ($total_records_paging == 0) {
             <small><a href="home.php"><i class="fa fa-home"></i> Home</a></small>
 
         </h1>
-        <hr />
+          
         <?php
         // otherwise, show data
     } else {

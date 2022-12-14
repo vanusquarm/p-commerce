@@ -165,7 +165,7 @@ session_start();
 				</form>
 	</div>
 	</section>
-	<hr />
+	  
 	<?php 
 		// otherwise, show data
 		}else{

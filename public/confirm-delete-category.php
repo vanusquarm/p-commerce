@@ -100,7 +100,7 @@
 	<h1>Confirm Action</h1>
 	<?php 
 	if($permissions['categories']['delete']==1){?>
-	<hr />
+	  
 	<form method="post">
 		<p>Are you sure want to delete this category?All the Subcategories and products will also be Deleted.</p>
 		<input type="submit" class="btn btn-primary" value="Delete" name="btnDelete"/>
